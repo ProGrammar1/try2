@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Assignments</title>
+    
+    <!-- Include the Google Maps API without additional libraries -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tXKe2m2_9Ywz_DIca0o5oelW6wpJlOg
+"></script>
+
+    <script src="https://kit.fontawesome.com/18fc84db18.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+
+<!-- Navigation -->
+
+
+<!-- Assignment 1: Responsive Design -->
+
+<section id="assignment1">
+     <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i> <!-- Correct class is "fa fa-bars" -->
+        </label>
+        <label class="logo">IT-111</label>
+        <ul>
+            <li><a href="#assignment1">Assignment 1</a></li>
+            <li><a href="#assignment2">Assignment 2</a></li>
+            <li><a href="#assignment3">Assignment 3</a></li>
+            <li><a href="#assignment4">Assignment 4</a></li>
+            <li><a href="#assignment5">Assignment 5</a></li>
+
+            <li><a href="#assignment6">Assignment 6</a></li>
+
+            <li><a href="#assignment7">Assignment 7</a></li>
+            <li><a href="#assignment8">Assignment 8</a></li>
+
+
+            <!-- Add similar links for other assignments -->
+        </ul>
+    </nav>
+    <br>
+    <div class="wrapper">
+
+        
+        <p ><span>Assignment 1: Respnsive Design: </span>Responsive design in HTML ensures websites adapt to different devices, using flexible layouts and media queries for a consistent and optimized user experience on various screen sizes.</p>
+        <img src="images/image.png" alt="Description of the image" style="max-width: 500px; float: right; ">
+
+    </div>
+    
+   
+
+    <!-- Your content for Assignment 1 goes here -->
+</section>
+
+<br><!-- Assignment 2: HTML5 Semantic Elements -->
+<section id="assignment2">
+ 
+    <!-- Your content for Assignment 2 goes here -->
+
+    <header>
+        <h1>Semantic Elements</h1>
+    </header>
+  
+
+    <main>
+        <section id="section" >
+            <h2>Semantic elements</h2>
+            <p>Semantic elements in HTML play a crucial role in providing a meaningful structure to web documents, contributing to both clarity and accessibility. Among these elements, the &lt;header&gt; tag is employed to encompass introductory content or navigation links, offering a clear starting point for the document or a specific section. Additionally, the &lt;nav&gt; element defines a navigation menu, housing links to various pages or sections within the website.</p>
+            <br>
+            <p>For content that is self-contained and can be distributed independently, the &lt;article&gt; element proves valuable, especially for items like blog posts or news articles. The &lt;section&gt; tag, on the other hand, divides the document into logical sections, aiding in the organization of content</p>
+        </section>
+
+        <article id="article">
+            <h2>Why Use Semantics</h2>
+            <p>First and foremost, semantic HTML enhances the accessibility of websites. Screen readers and other assistive technologies rely on semantic elements like &lt;header&gt;, &lt;nav&gt;, and &lt;main&gt; to interpret and present content to users with disabilities. The use of these elements ensures a more inclusive web experience, making information accessible to a broader audience</p>
+            <br>
+            <p>Moreover, semantic HTML contributes significantly to search engine optimization (SEO). Search engines prioritize content that is well-structured and semantically marked up. Semantic elements such as &lt;article&gt;, &lt;section&gt;, and &lt;footer&gt; offer search engines a clear understanding of the hierarchy and relationship between different parts of the content, ultimately improving a website's search ranking.</p>
+        </article>
+        <article id="article">
+            
+            <p>Additionally, semantic HTML facilitates future development and maintenance. A well-structured document using semantic elements is more readable and understandable, not only for developers but also for anyone reviewing or updating the code. This clarity promotes collaboration and reduces the likelihood of errors during the development process.</p>
+            <br>
+            <p>In conclusion, the adoption of semantic HTML is crucial for creating websites that are not only visually appealing but also accessible, SEO-friendly, and easy to maintain. Embracing semantic elements provides a foundation for a more inclusive web, where information is not only presented effectively to all users but also stands out in the vast landscape of the internet. It is, therefore, a fundamental practice that every web developer should incorporate into their workflow for the betterment of the digital experience</p>
+        </article>
+    </main>
+
+    <footer> Copyright 2024</footer>
+</section>
+<br>
+
+<section id="assignment3">
+   
+    <header>
+        <h1>Multimedia Integration</h1>
+    </header>
+    <br>
+
+    <!-- Embedding audio using the <audio> element with a caption -->
+    <div class="wrapper">
+
+        <figure >
+            <figcaption>My Guitar Recording</figcaption>
+            <audio controls>
+                <source src="myaudio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </figure>
+        <p >The audio file is a guitar recording of mine, which is my hobby when I dont have much to do</p>
+
+    </div>
+    
+
+    <br>
+
+    <div class="wrapper2">
+        <p >The video is a video of myself playing a guitar with the same guitar recording and also a hobby of mine when I dont have much to do</p>
+
+        <figure>
+            <figcaption>My Guitar Video</figcaption>
+            <video  controls>
+                <source src="myguitarvideo.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </figure>
+
+
+
+
+    </div>
+    <!-- Embedding video using the <video> element with a caption -->
+    
+
+    <!-- Additional content for Assignment 3 goes here -->
+
+</section>
+
+
+<br><br><br><!-- Assignment 2: HTML5 Semantic Elements -->
+<section id="assignment4" class="form-container">
+    <header>
+        <h1>HTML FORMS WITH ADVANCED FEATURES</h1>
+    </header>
+
+    <div class="wrapper">
+         
+    <form action="#" method="post" onsubmit="return validateForm()" >
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <label>Gender:</label>
+            <div class="radio-group">
+              <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <p >This is an example of a form that contains many inputs such as your name, email, phone, birthday,gender and a message you want to leave. Through the use of the form,fieldset and various input tag types this can be possible</p>
+
+
+    </div>
+    
+   
+    
+</section>
+
+
+<br>
+<section id="assignment5">
+    <header>
+        <h1>WEB ACCESSIBILITY</h1>
+    </header>
+
+    <!-- Your content for Assignment 5 goes here -->
+
+    <!-- Example 1: Adding semantic elements -->
+    <article role="article" aria-labelledby="accessible-content">
+        <div class="wrapper"> 
+         <p>The picture and this text is an example of an accessible elements which is in a article tag with the role of article and aria label accessible content</p>
+            <img src="images/cover.png" alt="A descriptive text for the image" style="width: 700px;"></div>
+
+    </article>
+
+    <!-- Example 2: ARIA attributes -->
+   
+
+    <!-- Example 3: Alternative text for images -->
+    
+</section>
+<br><br>
+
+
+<section id="assignment6">
+
+    <header>
+        <h1>MAPS API</h1>
+    </header>
+
+    <!-- Display user's current location -->
+  
+  
+    <!-- Map container -->
+    <br>
+    <div class="wrapper">
+        <div id="map" style="height: 400px; "></div>
+        <p>This is an example of integration of Geolocation and Maps API in HTML which shows my real time location</p>
+    </div>
+  
+  
+    <script>
+      // Get user's location using Geolocation API
+      navigator.geolocation.getCurrentPosition(success, error);
+  
+      function success(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+  
+        // Display the user's location
+      
+  
+        // Initialize Google Map
+        const map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: latitude, lng: longitude },
+          zoom: 15
+        });
+  
+        // Add a marker for the user's location
+        const marker = new google.maps.Marker({
+          position: { lat: latitude, lng: longitude },
+          map: map,
+          title: 'Your Location'
+        });
+      }
+  
+      function error() {
+      }
+    </script>
+    
+
+    <!-- Additional content for Assignment 3 goes here -->
+
+</section>
+
+<br><br>
+
+<section id="assignment7" >
+
+    <header>
+        <h1>DRAG AND DROP</h1>
+    </header>
+
+    <div class="wrapper">
+        <p id="description">This is an example of simple drag and drop implementation in HTML. Through the use of desired HTML elements and a little vanilla Javascript this feature can be posssible </p>
+
+        <div class="container">
+            <div id="left">
+                <div class="list" draggable="true"><p>To do 1</p></div>
+                <div class="list" draggable="true"><p>To do 2</p></div>
+        
+                <div class="list" draggable="true"><p>To do 3</p></div>
+                <div class="list" draggable="true"><p>To do 4</p></div>
+        
+            </div>
+        
+            <div id="right"></div>
+        </div>
+
+    </div>
+
+
+
+
+</section>
+<br>
+
+
+
+
+<section id="assignment8" class="form-container2">
+    <header>
+        <h1>LOCAL STORAGE API</h1>
+    </header>
+      
+    <div class="wrapper">
+        <p id="userDataDisplay">TRY NOW AND ENTER YOUR NAME</p>
+        <div class="container2"  >
+            <form action="#"  >
+                <fieldset>
+                    <legend>Enter Your Name</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="username" name="name" required>
+        
+                    <button type="submit" onclick="saveUserData()">Submit</button>
+    
+                </fieldset>
+            </form>
+
+
+        </div>
+     
+        
+    </div>
+  
+   
+
+
+</section>
+
+
+
+
+
+<!-- Add similar sections for other assignments -->
+
+<script >
+let lists = document.getElementsByClassName("list");
+let rightBox = document.getElementById("right");
+let leftbox = document.getElementById("left");
+
+for(list of lists){
+    list.addEventListener("dragstart", function(e){
+        let selected = e.target;
+
+        rightBox.addEventListener("dragover",function(e){
+            e.preventDefault();
+
+
+        });
+        rightBox.addEventListener("drop",function(e){
+            rightBox.appendChild(selected);
+            selected = null;
+        });
+
+        leftbox.addEventListener("dragover",function(e){
+            e.preventDefault();
+
+
+        });
+        leftbox.addEventListener("drop",function(e){
+            leftbox.appendChild(selected);
+            selected = null;
+        });
+       
+    });
+
+
+}
+</script> <!-- Link to your external JavaScript file -->
+
+<script>
+    function saveUserData() {
+    // Get input values
+    const username = document.getElementById('username').value;
+ 
+
+    // Create an object to store user data
+    const userData = {
+        username: username,
+        
+    };
+
+    // Convert the object to a JSON string and save to local storage
+    localStorage.setItem('userData', JSON.stringify(userData));
+
+    // Display the saved user data
+    displayUserData();
+}
+
+// Function to display saved user data
+function displayUserData() {
+    // Get the saved user data from local storage
+    const savedUserData = localStorage.getItem('userData');
+
+    // Check if user data exists
+    if (savedUserData) {
+        // Parse the JSON string back to an object
+        const userData = JSON.parse(savedUserData);
+
+        // Display the user data
+        const userDataDisplay = document.getElementById('userDataDisplay');
+        userDataDisplay.innerHTML = `Hello ${userData.username} You Have A Good Day Ahead of You`;
+    }
+}
+// Call displayUserData on page load to show any existing saved data
+displayUserData();
+
+</script>
+</body>
+</html>

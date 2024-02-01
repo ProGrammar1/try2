@@ -1,0 +1,890 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2c3e50;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+section{
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white ;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media only screen and (max-width:900px){
+    
+}
+
+@media only screen and (max-width: 900px){
+  
+  
+}
+
+header{
+    background-color: #1b9bff;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-size: 1.5rem;
+}
+main{
+    margin-left: 10%;
+}
+
+main section{
+    width:30%;
+    float: left;
+    padding: 10px;
+    margin-top: 2%;
+
+}
+main article{
+    width: 30%;
+    float: left;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+   #section{
+    width: 100%;
+   }
+
+   #article{
+    width: 100%;
+   }
+
+
+    
+}
+
+
+
+
+
+/* Styles for small screens (phones) */
+@media only screen and (max-width: 600px) {
+    
+    label.logo {
+        font-size: 30px;
+        padding-left: 60px; /* Adjusted padding for small screens */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 10px; /* Adjusted padding for small screens */
+    }
+    nav{
+        width: 110%;
+        
+        
+    }
+    body{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+
+    header{
+        width: 110%;
+    }
+      .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+
+        top: 110px;
+        left: -100%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 40px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    
+   
+    #assignment1 .wrapper p {
+        width: 350px;
+        font-size: 1.5rem  !important;
+        margin: 20px 100px 10px 20px; /* Adjust margin for the top, right, bottom, and left */
+        
+        
+       
+    }
+
+    .wrapper img {
+        width: 300px;
+        margin-left: 20px; /* Remove the right margin */
+    }
+
+
+   
+    #assignment3 .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment3 .wrapper p {
+        width: 350px;
+        font-size: 1.5rem  !important;
+        margin: 20px 100px 0 200px; /* Adjust margin for the top, right, bottom, and left */
+        
+        
+       
+    }
+
+    #assignment3 .wrapper2 {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment3 .wrapper figure{
+        width: 400px;
+        margin-right: 60%;/* Adjust margin for the top, right, bottom, and left */
+               
+    }
+    #assignment3 .wrapper2 p {
+        width: 350px;
+        font-size: 1.5rem  !important;
+        margin: 20px 50px 0 200px; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+
+    #assignment3 .wrapper2 figure{
+        width: 200px;
+        margin-left: 70%;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 50px; 
+
+    }
+    #assignment3 .wrapper2 figure video{
+        width: 300px;
+        margin: 20px 100px 0 5px;
+
+    }
+
+    #assignment4 .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+
+    #assignment4 .wrapper p {
+        width: 350px;
+        font-size: 1.5rem  !important;
+        margin: 20px 20px 20px 100px; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment4 .wrapper form{
+        width: 400px;
+        margin-right: 50%;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px;       
+    }
+
+    #assignment5 .wrapper img {
+
+       width: 90px;
+
+    }
+
+    #assignment5 .wrapper p {
+        width: 300px;
+        font-size: 1.5rem  !important;
+        margin: 20px 10px 20px; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment6 .wrapper {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment6 .wrapper p {
+        width: 300px;
+        font-size: 1.5rem  !important;
+        margin: 50px 50px 20px 100px; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment7 .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment6 .wrapper #map{
+        width: 400px;
+        margin-right: 10%;/* Adjust margin for the top, right, bottom, and left */
+               
+    }
+    #assignment7 .wrapper #description {
+        width: 300px;
+        font-size: 1.5rem  !important;
+        margin-right: 100px; /* Adjust margin for the top, right, bottom, and left */
+        margin-top: -10px;
+               
+    }
+    #right, #left{
+        width: 800px;
+        min-height: 100px;
+        margin: 20px;
+        border: 2px dashed #fff;
+
+    }
+
+    #assignment8 .wrapper {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment8 .wrapper p {
+        width: 300px;
+        font-size: 1.5rem  !important;
+        margin: 50px 10px 20px; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment8 .wrapper .container2{
+        width: 300px;
+        margin-right: -2px;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px;       
+    }
+    #assignment8 .wrapper .container2 form{
+        width: 300px;
+        margin-right: 50%;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px;       
+    }
+    /* Your styles for small screens go here */
+}
+
+/* Styles for medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+
+    #section{
+        width: 100%;
+        margin-left: 10%;
+       }
+    
+       #article{
+        width: 100%;
+        margin-left: 10%;
+       }
+    
+    label.logo {
+        font-size: 30px;
+        padding-left: 60px; /* Adjusted padding for small screens */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 10px; /* Adjusted padding for small screens */
+    }
+    nav{
+        width: 133%;
+    }
+  
+    h1{
+        font-size: 2.5rem;
+    }
+
+    header{
+        width: 133%;
+    }
+      .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+
+        top: 110px;
+        left: -100%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+    #assignment1 .wrapper p {
+        max-width: 100%;
+        font-size: 1.2rem;
+        margin: 20px 160px; /* Adjust margin for the top and bottom, and add left and right margin */
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Align items at the start of the cross axis (vertically) */
+        margin: 60px;
+    }
+    
+    .wrapper img {
+       width: 400px;
+        margin-right: 100px;
+        margin-top: 10%; /* Add margin to the right of the image */
+    }
+    #assignment3 .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment3 .wrapper p {
+        width: 1000px;
+        font-size: 2rem  !important;
+        margin: 20px;
+        margin-right: -10%;/* Adjust margin for the top, right, bottom, and left */
+        
+        
+       
+    }
+    #assignment3 .wrapper figure audio{
+        width: 500px;
+        margin-left: 50px;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px; 
+
+    }
+    #assignment3 .wrapper figure figcaption{
+       
+        margin-left: 50px;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px; 
+
+    }
+    #assignment3 .wrapper2 {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment3 .wrapper figure{
+        width: 400px;
+        margin-right: 60%;/* Adjust margin for the top, right, bottom, and left */
+               
+    }
+    #assignment3 .wrapper2 p {
+        width: 900px;
+        font-size: 2rem  !important;
+        margin: 20px;
+        margin-right: -35%; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+
+    #assignment3 .wrapper2 figure{
+        width: 200px;
+        margin-left: 70%;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 50px; 
+
+    }
+    #assignment3 .wrapper2 figure video{
+        width: 600px;
+        margin: 20px ;
+        margin-left: -290px;
+
+    }
+
+    #assignment4 .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+
+    #assignment4 .wrapper p {
+        width: 900px;
+        font-size: 2rem  !important;
+        margin: 20px 100px 20px 150px; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment4 .wrapper form{
+        width: 400px;
+        margin-right: 25%;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px;       
+    }
+    #assignment5 .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment5 .wrapper img {
+
+       width: 50px;
+       margin-left: 40%;
+
+    }
+
+    #assignment5 .wrapper p {
+        width: 1000px;
+        font-size: 2rem  !important;
+        margin: 20px;
+        margin-left: 10%; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment6 .wrapper {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment6 .wrapper p {
+        width: 900px;
+        font-size: 2rem  !important;
+        margin: 50px; 
+        margin-left: 200px;/* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment7 .wrapper {
+        flex-direction: column-reverse; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment6 .wrapper #map{
+        width: 600px;
+        margin-right: -50px;/* Adjust margin for the top, right, bottom, and left */
+               
+    }
+    #assignment7 .wrapper #description {
+        
+        font-size: 2rem  !important;
+        margin: 30px 700px 20px; 
+       
+               
+    }
+
+    #assignment7 .wrapper .container {
+        
+        margin-left: 20%; /* Adjust margin for the top, right, bottom, and left */
+        margin-top: -10px;
+    }
+
+    #assignment7 .wrapper #description {
+        
+        margin-left: 20%; /* Adjust margin for the top, right, bottom, and left */
+        margin-top: -10px;
+    }
+         
+    #right, #left{
+        width: 800px;
+        min-height: 100px;
+        margin: 20px;
+        margin-left: 1000px;
+        border: 2px dashed #fff;
+
+    }
+
+    #assignment8 .wrapper {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center-align flex items horizontally */
+        margin: 20px; /* Adjust margin for spacing */
+        display: flex;
+        justify-content: center;
+    }
+    #assignment8 .wrapper p {
+        width: 900px;
+        font-size: 2rem  !important;
+        margin: 30px 100px 20px; /* Adjust margin for the top, right, bottom, and left */
+        
+               
+    }
+    #assignment8 .wrapper .container2{
+        width: 500px;
+        margin-right: 5px;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px;  
+        margin-left: 150px;     
+    }
+    #assignment8 .wrapper .container2 form{
+        width: 450px;
+        margin-left: 10px;/* Adjust margin for the top, right, bottom, and left */
+        margin-top: 10px;       
+    }
+    /* Your styles for medium screens go here */
+}
+
+/* Styles for large screens (desktops) */
+@media only screen and (min-width: 992px) {
+    /* Your styles for large screens go here */
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-container form {
+    width: 20%;
+    margin: auto;
+    padding: 20px; /* Add padding to the form */
+
+}
+
+.form-container form fieldset {
+    background: #2c3e50;
+    margin-bottom: 20px; /* Add margin to the fieldset (group of form elements) */
+    
+}
+
+.form-container form label {
+    display: block;
+    margin-bottom: 8px; /* Add margin below each label */
+    margin-left: 10px;
+}
+
+.form-container form input,
+.form-container form textarea {
+    width: 90%; /* Make the input fields take up 100% of the width within the form */
+    padding: 10px; /* Add padding to the input fields */
+    margin-bottom: 12px; /* Add margin below each input field */
+    margin-left: 10px;
+}
+
+.form-container form .radio-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the width for better alignment */
+.form-container form .radio-group label {
+    margin-right: 100px;
+    align-items: center;
+     /* Adjust the spacing between radio buttons and labels */
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 38%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+#assignment1 p {
+    max-width: 600px;
+    font-size: 2rem;
+    margin: 20px 200px; /* Adjust margin for the top and bottom, and add left and right margin */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the cross axis (vertically) */
+    margin: 60px;
+}
+
+.wrapper img {
+    max-width: 100%;
+    margin-right: 200px; /* Add margin to the right of the image */
+}
+
+#assignment4 .wrapper{
+    background: #e91e63;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+
+
+#assignment3 p {
+    max-width: 600px;
+    font-size: 2rem;
+    margin: 20px 300px; /* Adjust margin for the top and bottom, and add left and right margin */
+}
+#assignment3 .wrapper figure{
+    max-width: 100%;
+    margin-left: 300px; 
+    margin-top: 70px;
+    max-height: 300px;
+}
+
+.wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the cross axis (vertically) */
+    margin: 60px;
+}
+#assignment3 .wrapper2 figure{
+    max-width: 100%;
+    margin-right: 400px;
+}
+
+
+#assignment3 .wrapper2 p{
+    max-width: 100%;
+    margin-left: 100px; }
+
+#assignment4 p {
+    max-width: 600px;
+    font-size: 2rem;
+    margin: 100px 300px; /* Adjust margin for the top and bottom, and add left and right margin */
+}
+
+#assignment6 p {
+    max-width: 600px;
+    font-size: 2rem;
+    margin: 100px 200px; /* Adjust margin for the top and bottom, and add left and right margin */
+}
+#assignment6 .wrapper #map{
+    max-width: 100%;
+    margin-left: 100px; 
+    margin-top: 70px;
+    max-height: 300px;
+}
+
+#assignment5 p {
+    max-width: 600px;
+    font-size: 2rem;
+    margin: 200px 50px; /* Adjust margin for the top and bottom, and add left and right margin */
+}
+#assignment5 article .wrapper img{
+    max-width: 100%;
+    margin-right: 200px;
+    margin-top: 70px;
+}
+
+.container{
+    width: 80%;
+    min-height: 50vh;
+    background: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right, #left{
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed #fff;
+
+}
+
+.list{
+    background: #e91e63;
+    height: 60px;
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.list p{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+#assignment7 .wrapper #description {
+    max-width: 600px;
+    font-size: 2rem;
+    margin: 100px 100px; /* Adjust margin for the top and bottom, and add left and right margin */
+}
+#map{
+    border-radius: 20px;
+    border: 2px dashed #fff;
+    width: 500px;
+}
+
+#assignment8 p {
+    max-width: 600px;
+    font-size: 2.5rem;
+    margin: 80px 100px; /* Adjust margin for the top and bottom, and add left and right margin */
+}
+
+.container2{
+    border-radius: 20px;
+    border: 2px dashed #fff;
+    margin-right: 300px;
+}
+
+
+
+.container2 form {
+    width: 500px; /* Adjust the width as needed */
+    margin: auto;
+    height: 400px;
+    padding: 20px;
+    margin-top: 20%;
+}
+
+.container2 form fieldset {
+    margin-bottom: 20px;
+}
+
+.container2 form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 5%;
+}
+
+.container2 form input,
+.container2 form textarea {
+    width: 90%; /* Make the input fields take up the full width */
+    padding: 10px;
+    margin-bottom: 12px;
+    margin-left: 5%;
+}
+
+.container2 form .radio-group {
+    display: flex;
+    flex-direction: column; /* Display radio buttons vertically */
+}
+
+.container2 form .radio-group label {
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+
+.container2 form button {
+    margin-left: 40%; /* Adjust margin as needed */
+}
+span{
+    font-weight: bold;
+    color: #e91e63;
+    font-size: 2.5rem;
+}
+
+video{
+border-radius: 10%;
+width: 400px;
+}
+
